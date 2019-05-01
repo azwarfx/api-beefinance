@@ -9,6 +9,7 @@ import com.azwarazuhri.apibeefinance.entity.Users;
 
 @Repository
 public interface UsersRepository extends CrudRepository<Users, Long> {
-	public Users findById(Long paLong);
+	public Users findById(Long id);
 	public List<Users>findAll();
+	List<Users> findByEmail(String email);
 }
